@@ -1,0 +1,61 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12 mt-5 mb-5 d-flex align-items-center">
+      <h1 class="pr-4 m-0">{{ 'Подсматриватель погоды онлайн' | translate }}</h1>
+      <button id="btn-refresh" type="button" (click)="start_page()">Обновить</button>
+    </div>
+
+    <ng-container *ngIf="sity.length > 0">
+
+      <div class="col-12 d-flex align-items-center">
+        <h5 class="mr-5">Выберите город:</h5>
+
+        <select class="mr-4" id="sity-select" (change)="Loading_pogoda($event)">
+          <option value=""> -- кликни сюда, бро -- </option>
+          <ng-container *ngFor="let item of sity">
+            <option value="{{item}}">{{item}}</option>
+          </ng-container>
+        </select>
+        
+      </div>
+
+      <div class="col-12 mt-5" *ngIf="pogoda">
+        <div class="best_card d-flex">
+          <div style="width: 70%">
+            <small>{{ actual_date | date : 'dd.MM.yyyy' }}</small>
+            <h3>
+              {{ pogoda.sity }}
+            </h3>
+            <div class="d-flex mt-1"> 
+              <ng-container *ngFor="let temp of pogoda.temperature">
+                <div class="data_pogoda text-center">
+                  <h6>{{ temp.time }}</h6>
+                  <h6>{{ temp.degrees }} &deg;</h6>
+                </div>
+              </ng-container>
+            </div>
+            <small class="mt-2"> Восход солнышка: {{ pogoda.sunrise }}</small><br>
+            <small class="mt-1"> Закат: {{ pogoda.sunset }}</small>
+            
+          </div>
+          <div class="tempreture" style="width: 30%">
+            <img [src]="pogoda.url_img" alt="icon" class="left-img mt-3" style="height: 110px;" />
+          </div>
+        </div>
+      </div>
+
+      
+
+    </ng-container>
+
+    <div class="col-12" *ngIf="sity.length == 0">
+      <h2>Подождите, загружаюсь..</h2>
+      <small>
+        Возможно что-то пошло не так. Проверьте, чтобы был включен сервер на порту: <a target="_blank" href="http://localhost:5111/"><b>http://localhost:5111/</b></a>
+        <br>
+        Он лежит в директории <b>\SERVER\index.js</b>
+      </small>
+    </div>
+
+  </div>
+</div>

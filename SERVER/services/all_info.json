@@ -1,0 +1,131 @@
+[
+    {
+        "sity": "Москва",
+        "temperature": [
+            {
+                "time": "утро",
+                "degrees": -2,
+                "humidity": "71%",
+                "wind": "6.8m/с"
+            },
+            {
+                "time": "день",
+                "degrees": 0,
+                "humidity": "71%",
+                "wind": "5.4m/с"
+            },
+            {
+                "time": "вечер",
+                "degrees": 1,
+                "humidity": "71%",
+                "wind": "2.2m/с"
+            },
+            {
+                "time": "ночь",
+                "degrees": -2,
+                "humidity": "71%",
+                "wind": "1.6m/с"
+            }
+        ],
+        "url_img": "https://cdn-icons-png.flaticon.com/512/1779/1779940.png",
+        "sunrise": "07:39",
+        "sunset": "04:48"
+    },
+    {
+        "sity": "Ереван",
+        "temperature": [
+            {
+                "time": "утро",
+                "degrees": 7,
+                "humidity": "71%",
+                "wind": "6.8m/с"
+            },
+            {
+                "time": "день",
+                "degrees": 12,
+                "humidity": "71%",
+                "wind": "5.4m/с"
+            },
+            {
+                "time": "вечер",
+                "degrees": 11,
+                "humidity": "71%",
+                "wind": "2.2m/с"
+            },
+            {
+                "time": "ночь",
+                "degrees": 8,
+                "humidity": "71%",
+                "wind": "1.6m/с"
+            }
+        ],
+        "url_img": "https://cdn-icons-png.flaticon.com/512/4814/4814268.png",
+        "sunrise": "07:29",
+        "sunset": "05:55"
+    },
+    {
+        "sity": "Оренбург",
+        "temperature": [
+            {
+                "time": "утро",
+                "degrees": -12,
+                "humidity": "71%",
+                "wind": "4.8m/с"
+            },
+            {
+                "time": "день",
+                "degrees": -10,
+                "humidity": "71%",
+                "wind": "3.4m/с"
+            },
+            {
+                "time": "вечер",
+                "degrees": -9,
+                "humidity": "71%",
+                "wind": "4.2m/с"
+            },
+            {
+                "time": "ночь",
+                "degrees": -12,
+                "humidity": "71%",
+                "wind": "3.6m/с"
+            }
+        ],
+        "url_img": "https://cdn-icons-png.flaticon.com/512/414/414927.png",
+        "sunrise": "06:43",
+        "sunset": "04:12"
+    },
+    {
+        "sity": "Ростов-на-Дону",
+        "temperature": [
+            {
+                "time": "утро",
+                "degrees": -3,
+                "humidity": "71%",
+                "wind": "4.8m/с"
+            },
+            {
+                "time": "день",
+                "degrees": -5,
+                "humidity": "71%",
+                "wind": "3.4m/с"
+            },
+            {
+                "time": "вечер",
+                "degrees": -3,
+                "humidity": "71%",
+                "wind": "4.2m/с"
+            },
+            {
+                "time": "ночь",
+                "degrees": -1,
+                "humidity": "71%",
+                "wind": "3.6m/с"
+            }
+        ],
+        "url_img": "https://cdn-icons-png.flaticon.com/512/1779/1779940.png",
+        "sunrise": "06:56",
+        "sunset": "04:57"
+    }
+  
+]
